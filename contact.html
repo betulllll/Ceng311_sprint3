@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Contact</title>
+  <!-- for language -->
+  <meta charset="utf-8" />
+
+  <!-- for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Include JS files -->
+  <script src="jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script src="contact.js"></script>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal Plugin --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+  
+
+</head>
+
+<body>
+  <h1>CONTACT</h1>
+  <div class="navbarr">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="tools.html">Tools</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <main>
+    <div class="container"> <!-- Purple big div is container. It consists of map and form. -->
+      <div class="map">
+        <!-- We took this embedded map from Net, we should use iframe-->
+        <h2>MAP</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195885.05345896914!2d32.59795518696861!3d39.90325990308387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d347d520732db1%3A0xbdc57b0c0842b8d!2sAnkara!5e0!3m2!1str!2str!4v1689437038066!5m2!1str!2str"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="form">
+        <h2>FORM</h2>
+        <form>
+          <input type="email" id="email" placeholder="Enter your email" class="form-in" required />
+          <input type="text" id="name" placeholder="Enter your name" class="form-in" required />
+          <textarea id="message" placeholder="Your message" class="form-in" required></textarea>
+          <button id="send" class="form-in">Send</button>
+        </form>
+
+        <!-- Modal content -->
+        <div id="modal-content" class="modal">
+            <h1>Thank you!</h1>
+            <p style="color: black;">Your message successfully sent!</p>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br>
+  </main>
+  <footer id="footer_id">
+    <div id="copy_right">2024- <span id="date_id"></span> &copy; All rights reserved</div>
+  </footer>
+</body>
+
+</html>
